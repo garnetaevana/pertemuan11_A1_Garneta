@@ -1,0 +1,15 @@
+def faktorial(n):
+    if n < 0:
+        return "Bukan bilangan bulat positif"
+    elif n == 0:
+        return 1
+    else:
+        hasil = 1
+        for i in range(1, n + 1):
+            hasil *= i
+        return hasil
+
+# Contoh 
+bilangan = 5
+hasil_faktorial = faktorial(bilangan)
+print(f"Faktorial dari {bilangan}! = {hasil_faktorial}")
